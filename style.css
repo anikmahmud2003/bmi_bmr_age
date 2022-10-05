@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+  gap: 50px;
+  
+}
+
+div{
+  height: 100px;
+  width: 100vw;
+}
+
+input{
+  height: 60px;
+  width: 300px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#result{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20px;
+}

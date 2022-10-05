@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BMI BMR AGE</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div style="display:flex;align-items:center;justify-content:center;flex-direction:column; gap:7px;">
+  <label style="font-size:20px;" for="select">What do you want to calculate?</label>
+
+<select style="height:40px;width:200px;font-size:30px;" name="select" id="select" onchange="selected()">
+  <option selected >Select One</option>
+  <option value="bmi">BMI</option>
+  <option value="bmr_male">BMR male</option>
+  <option value="bmr_female">BMR female</option>
+  <option value="age">AGE</option>
+</select>
+</div>
+
+<div id="inputfield" style="display:flex;align-items:center;justify-content:center;flex-direction:column; gap:7px; display:none; ">
+  
+  <div style="display:flex;align-items:center;justify-content:center;flex-direction:column; gap:7px; display:none;" id="bmi_input">
+  <input type="number" id="weight_bmi" placeholder="Weight in KG">
+   <input type="number" id="height_bmi" placeholder="Height in meter">
+   <input type="submit" id="bmi_submit">
+  </div>
+  
+   <div style="display:flex;align-items:center;justify-content:center;flex-direction:column; gap:7px; display:none;" id="bmr_male_input">
+  <input type="number" id="weight_bmr_male" placeholder="Weight in KG">
+   <input type="number" id="height_bmr_male" placeholder="Height in cm">
+   <input type="number" id="age_bmr_male" placeholder="Age in year">
+   <input type="submit" id="bmr_male_submit">
+  </div>
+  
+   <div style="display:flex;align-items:center;justify-content:center;flex-direction:column; gap:7px; display:none;" id="bmr_female_input">
+  <input type="number" id="weight_bmr_female" placeholder="Weight in KG">
+   <input type="number" id="height_bmr_female" placeholder="Height in cm">
+   <input type="number" id="age_bmr_female" placeholder="Age in year">
+   <input type="submit" id="bmr_female_submit">
+  </div>
+  
+   <div style="display:flex;align-items:center;justify-content:center;flex-direction:column; gap:7px; display:none;" id="age_input">
+   <input type="text" placeholder="Enter Birth date" onfocus="(this.type='date')" id="age">
+   <input type="submit" id="age_submit">
+  </div>
+  
+  </div>
+<div id="result">
+  
+</div>
+
+</body>
+<script src="index.js"></script>
+</html>
